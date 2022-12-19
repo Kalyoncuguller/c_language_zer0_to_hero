@@ -33,6 +33,23 @@ int main()
     }
     printf("\n");
     for(int i = 0;i<6;i++){
+        
+        
+        
+   //
+        #include <stdio.h>
+int main()
+{
+    int array[8][6]={{2,2},{3,3,3,3},{4},{5,5,5},{6,6,6,6,6},{7,7},{8,8,8,8},{9,9,9,9,9,9}};
+    for (int i=0;i<8;i++){
+        for(int j=0;j<6;j++){
+            if(array[i][j]!=0){
+                printf("%d ",array[i][j]);
+            }
+        }
+        printf("\n");
+    }
+}
        printf("%d ",array[7]);
     }
 return 0;
