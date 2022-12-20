@@ -1,24 +1,22 @@
-// union
-
 #include <stdio.h>
 #include <stdlib.h>
 
-union data {
-    int sayi;
-    float ondalik;
-    char yazi[20];
+union information {
+    int age;
+    float grade_av;
+    char name[20];
 };
 
 int main() {
-    union data veri;
+    union information personal;
     printf("Enter an integer: ");
-    scanf("%d", &veri.sayi);
-    printf("Sayi: %d \n", veri.sayi);
+    scanf("%d", &personal.age);
+    printf("Age: %d \n", personal.age);
     printf("Enter a float: ");
-    scanf("%f", &veri.ondalik);
-    printf("Ondalik: %f \n", veri.ondalik);
+    scanf("%f", &personal.grade_av);
+    printf("Grade avarage: %f \n", personal.grade_av);
     printf("Enter a string: ");
-    scanf("%s", veri.yazi);
-    printf("Yazi: %s \n", veri.yazi);
+    scanf("%s", personal.name);
+    printf("Name: %s \n", personal.name);
     return 0;
 }
