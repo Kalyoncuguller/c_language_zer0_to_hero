@@ -1,28 +1,40 @@
-// match the days of the week using switchcase in c
+// match the days of the week using switchcase in c and enum 
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
+enum days {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+
 int main(){
-int day;
-printf("Enter a value in the range of 1-7: ");
-scanf("%d", &day);
-switch(day){
-case 1: printf("Monday");
-break;
-case 2: printf("Tuesday");
-break;
-case 3: printf("Wednesday");
-break;
-case 4: printf("Thursday");
-break;
-case 5: printf("Friday");
-break;
-case 6: printf("Saturday");
-break;
-case 7: printf("Sunday");
-break;
-default:
-printf("Please enter a value in the range of 1-7!");
-}
+    enum days day;
+    
+    printf("1-7 aralığında bir değer girin: ");
+    scanf("%d", &day);
+    switch (day){
+        case Monday:
+            printf("Monday");
+            break;
+        case Tuesday:
+            printf("Tuesday");
+            break;
+        case Wednesday:
+            printf("Wednesday");
+            break;
+        case Thursday:
+            printf("Thursday");
+            break;
+        case Friday:
+            printf("Friday");
+            break;
+        case Saturday:
+            printf("Saturday");
+            break;
+        case Sunday:
+            printf("Sunday");
+            break;
+        default:
+            printf("operatör hatası");
+    }
+    return 0;
 }
