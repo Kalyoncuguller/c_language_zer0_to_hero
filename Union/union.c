@@ -11,9 +11,9 @@ union Data {
  
 int main( ) {
 
-   union Data data;        
+   union Data veri;        
 
-   printf( "Memory size occupied by data : %d\n", sizeof(data));
+   printf( "Memory size occupied by data : %d\n", sizeof(veri));
 
    return 0;
 }
