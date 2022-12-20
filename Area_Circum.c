@@ -1,17 +1,27 @@
-// To calculate the circumference of a circle, multiply the diameter of the circle with π (pi). 
-// The circumference can also be calculated by multiplying 2×radius with pi (π=3.14).
 
-#include"stdio.h"
-#define pi 3.1415
+//Hocam google'dan biraz yardım aldım
 
-int main(){
-	float area,circum,r;
-	printf("Enter the radius of the circle:");
-	scanf("%f",&r);
-	area=pi*r*r;
-	circum=2*pi*r*r;
-	printf("Area of the circle: %.2f\n",area);
-	printf("Circumference of the circle: %.2f",circum);
-	
-	return 0;
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14
+
+void alanbul(float r, float *area) {
+    *area = PI * r * r;
+}
+
+void cevrebul(float r, float *circum) {
+    *circum = 2 * PI * r;
+}
+
+
+int main() {
+    float r, area, circum;
+    printf("çemberin yarıçapını girin: ");
+    scanf("%f", &r);
+    alanbul(r, &area);
+    cevrebul(r, &circum);
+    printf("dairenin alanı = %f \n", area);
+    printf("dairenin çevresi = %f \n", circum);
+    return 0;
 }
